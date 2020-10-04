@@ -9,12 +9,12 @@ typedef struct _node {
 }Node;
 
 int main(){
-	Node *head = NULL;
+	Node *head = NULL; //Node = struct _node
 	Node *second=NULL;
 	Node *third =NULL; 
 	
 	//malloc
-	head=(Node *)malloc(sizeof(struct _node));
+	head=(Node *)malloc(sizeof(struct _node)); //(Node *)=(struct _node *)  necessary malloc
 	second=(Node *)malloc(sizeof(struct _node));
 	third=(Node *)malloc(sizeof(struct _node)); 
 	
